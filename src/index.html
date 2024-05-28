@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <!-- <link rel="stylesheet" href="tailwind.css"> -->
+    <title>Ayush Ramteke</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="mobile-profile" onclick="mobile_profile()">
+        <img src="./images/proflie.png" width="32px">
+    </div>
+    <div id="mobile-menu" onclick="openNav()">
+        <img style="filter: invert(1);" src="./images/hamburger.png" width="25px">
+    </div>
+    <div id="side-navbar">
+        <img src="./images/cross.png" alt="close" id="close-nav" onclick="closeNavbar()" width="32px">
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="#">
+                <li>Education</li>
+            </a>
+            <a href="blogs.html">
+                <li>Blog</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </div>
+
+    <aside class="profile-block">
+        <div class="profile-section">
+            <div class="profile-img">
+                <img src="./images/profile.jpg" width="120px" height="120px">
+            </div>
+            <div class="profile-name">Ayush Ramteke</div>
+            <div class="profile-bio">Full stack web developer and Programmer</div>
+            <img src="./images/cross.png" onclick="mobile_profile()"
+                style="position: absolute; top: 0;right: 1rem; filter: invert(1); display: none;" width="20px"
+                class="close_profile">
+        </div>
+        <div class="profile-details">
+            <div class="profile-address">
+                <div class="profile-add-opt">
+                    <p>Country:</p>
+                    <p>India</p>
+                </div>
+                <div class="profile-add-opt">
+                    <p>City:</p>
+                    <p>Nagpur</p>
+                </div>
+                <div class="profile-add-opt">
+                    <p>Age:</p>
+                    <p>18 Yrs</p>
+                </div>
+            </div>
+            <hr>
+            <div class="profile-languages">
+                <div class="lang">
+                    <div class="pie animate" style="--p:80;--c:#FFC700"> 80%</div>
+                    <p class="lang-name">Hindi</p>
+                </div>
+                <div class="lang">
+                    <div class="pie animate" style="--p:60;--c:#FFC700"> 60%</div>
+                    <p class="lang-name">English</p>
+                </div>
+                <div class="lang">
+                    <div class="pie animate" style="--p:70;--c:#FFC700"> 70%</div>
+                    <p class="lang-name">Marathi</p>
+                </div>
+            </div>
+            <hr>
+            <div class="profile-skills">
+                <h2>Skills:</h2>
+                <div class="skills-bars">
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="skill-bar bar" data="80"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>CSS</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="skill-bar bar" data="70"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>Javascript</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="skill-bar bar" data="60"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>Node.JS</p>
+                            <p>55%</p>
+                        </div>
+                        <div class="skill-bar bar" data="55"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>C</p>
+                            <p>75%</p>
+                        </div>
+                        <div class="skill-bar bar" data="75"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>C++</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="skill-bar bar" data="60"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>React.Js</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="skill-bar bar" data="60"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>Express.Js</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="skill-bar bar" data="60"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>MongoDB</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="skill-bar bar" data="60"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>MySql</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="skill-bar bar" data="60"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="d-block text-center text-secondary tr">
+                <img src="/">
+                <p>Download CV</p>
+            </a>
+        </div>
+        <div class="profile-social-media">
+            <ul>
+                <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </ul>
+        </div>
+    </aside>
+    <main class="body-container" style="width: calc(100% - 320px - 100px);  left: 320px;">
+        <div class="welcome-container">
+            <h1 class="text-uppercase">READY TO BOOK AN ORDER</h1>
+            <h3> <span></span> <span> Let's work together!</span></h3>
+            <a href="/contact">Contact Me</a>
+        </div>
+        <div class="whoamI-section section-heading">
+            <h4 class="text-uppercase">Who Am I?</h4>
+            <p>As a web developer with expertise in HTML, CSS, and JavaScript, I offer top-notch web services to
+                clients
+                looking for high-quality, user-friendly, and visually appealing websites. I believe in providing my
+                clients with the best experience possible, which is why I offer a free trial before starting any
+                project. This allows clients to test my skills and see if my services are the right fit for their
+                needs.
+                Whether you're looking to create a simple website or a complex, dynamic one, I have the technical
+                know-how and creative vision to bring your ideas to life. Choose me for your next web development
+                project and experience the best value for your money on Fiverr.
+            </p>
+        </div>
+        <div class="service-section section-heading">
+            <h4>Services:</h4>
+            <div class="services-blocks">
+                <div class="service-card">
+                    <img src="./images/code.png" width="40px">
+                    <h3>WEB DEVELOPMENT</h3>
+                </div>
+                <div class="service-card">
+                    <img src="./images/web-page.png" width="40px">
+                    <h3>WEB DESIGNING</h3>
+                </div>
+                <div class="service-card">
+                    <img src="./images/settings.png" width="40px">
+                    <h3>WEB MODIFICATIONS</h3>
+                </div>
+            </div>
+        </div>
+        <div class="projects-section section-heading">
+            <h4>Projects:</h4>
+            <div class="projects-blocks">
+                <div class="projects-card"
+                    style="background: url('./images/projects/helpingnotes.png') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="projects-card"
+                    style="background: url('./images/projects/yoursalon.png') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="projects-card"
+                    style="background: url('./images/projects/medcom.png') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="projects-card"
+                    style="background: url('./images/projects/anime-website.png') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="projects-card"
+                    style="background: url('./images/projects/ecom.png') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="projects-card"
+                    style="background: url('./images/projects/homepatient.png') center center no-repeat; background-size: contain;">
+                </div>
+            </div>
+        </div>
+        <div class="testimonials-section section-heading">
+            <h4>Testimonials:</h4>
+            <div class="testimonials-block">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="comment-content">
+                                <div class="name-ratings">
+                                    <div class="customer-name">diegort99</div>
+                                    <div class="ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="comment">
+                                    Friendly and attentive seller and cheap and quality service, I sent him some
+                                    photos of how I
+                                    wanted
+                                    my website to look and he gave me some templates that were exactly what I asked
+                                    for. He placed
+                                    the
+                                    order on time and in great detail.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="comment-content">
+                                <div class="name-ratings">
+                                    <div class="customer-name">diegort99</div>
+                                    <div class="ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="comment">
+                                    Friendly and attentive seller and cheap and quality service, I sent him some
+                                    photos of how I
+                                    wanted
+                                    my website to look and he gave me some templates that were exactly what I asked
+                                    for. He placed
+                                    the
+                                    order on time and in great detail.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="comment-content">
+                                <div class="name-ratings">
+                                    <div class="customer-name">diegort99</div>
+                                    <div class="ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="comment">
+                                    Friendly and attentive seller and cheap and quality service, I sent him some
+                                    photos of how I
+                                    wanted
+                                    my website to look and he gave me some templates that were exactly what I asked
+                                    for. He placed
+                                    the
+                                    order on time and in great detail.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="comment-content">
+                                <div class="name-ratings">
+                                    <div class="customer-name">diegort99</div>
+                                    <div class="ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="comment">
+                                    Friendly and attentive seller and cheap and quality service, I sent him some
+                                    photos of how I
+                                    wanted
+                                    my website to look and he gave me some templates that were exactly what I asked
+                                    for. He placed
+                                    the
+                                    order on time and in great detail.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- <div class="comment-change-button">
+                <button class="comment-active"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div> -->
+        </div>
+        <div id="openNav">
+            <div onclick="openNav()">
+                <img src="./images/hamburger.png">
+            </div>
+        </div>
+        <footer>
+            Designed And Develop By: Ayush Ramteke
+        </footer>
+    </main>
+    <script>
+
+        var profileBlock = document.querySelector(".profile-block")
+        var mobileProfile = document.querySelector("#mobile-profile");
+        function mobile_profile() {
+            profileBlock.classList.toggle('showProfileBlock')
+        }
+        // close the menu when clicked outside
+        document.addEventListener('click', (event) => {
+            if (!profileBlock.contains(event.target) && !mobileProfile.contains(event.target)) {
+                profileBlock.classList.remove('showProfileBlock')
+            }
+        })
+
+
+
+        var SideNav = document.querySelector("#side-navbar");
+        var BodyContainer = document.querySelector('.body-container');
+        var openNavBtn = document.querySelector('#openNav');
+        var openMobileNavBtn = document.querySelector('#mobile-menu');
+        function openNav() {
+            if (screen.width > 1200) {
+                BodyContainer.style.left = "100px";
+            }
+            else {
+                BodyContainer.style.left = "-220px";
+            }
+            SideNav.style.right = "0px";
+        }
+        // close the menu when clicked outside
+        document.addEventListener('click', (event) => {
+            if (!SideNav.contains(event.target) && !openNavBtn.contains(event.target) && !openMobileNavBtn.contains(event.target) && SideNav.style.right == "0px") {
+                SideNav.style.right = "-320px";
+                if (screen.width > 1200) {
+                    BodyContainer.style.left = "320px";
+                }
+                else {
+                    BodyContainer.style.left = "0px";
+                }
+            }
+        });
+        function closeNavbar() {
+            SideNav.style.right = "-320px";
+            if (screen.width > 1200) {
+                BodyContainer.style.left = "320px";
+            }
+            else {
+                BodyContainer.style.left = "0px";
+            }
+        }
+
+        // Setting skill bar width
+        var bar = document.querySelectorAll('.bar');
+        for (let i = 0; i < bar.length; i++) {
+            const element = bar[i];
+            element.style.setProperty("--skillLevel", element.getAttribute('data') + '%')
+        }
+
+
+    </script>
+</body>
+
+</html>

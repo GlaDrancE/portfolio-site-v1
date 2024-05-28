@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GladCode - Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="mobile-menu" onclick="openNav()">
+        <img style="filter: invert(1);" src="./images/hamburger.png" width="25px">
+    </div>
+    <div id="side-navbar">
+        <img src="./images/cross.png" width="32px" alt="close" id="close-nav" onclick="closeNavbar()">
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="#">
+                <li>Education</li>
+            </a>
+            <a href="blogs.html">
+                <li>Blog</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </div>
+    <div class="body-container blog-body-container">
+        <header id="channel-logo">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="">
+            </a>
+        </header>
+        <section class="blog-body">
+            <div class="home-link">
+                <a href="./index.html">Home</a>
+                <hr class="border border-light">
+            </div>
+            <div class="blog-content-body">
+                <header class="blog-header">
+                    <h1 class="blog-heading">
+                        Blog Heading
+                    </h1>
+                    <div class="author-details">
+                        <div class="author-img">
+                            <img src="./images/logo.png" alt="" width="32px" height="32px">
+                        </div>
+                        By
+                        <div class="author-name">
+                            GladCode
+                        </div>
+                        <div class="publish-date">
+                            12 Nov 2023
+                        </div>
+                    </div>
+                </header>
+                <p class="blog-content">
+                    We've come so far I hope you tried to solve the previous questions I have given to you. Now it's
+                    time to move further.
+
+                    In this tutorial, we will learn about what is ADT and the concept of ARRAYs ADT.
+
+                    ADT - Abstract Datatypes.
+
+                    what is ADT or Abstract Datatype?
+
+                    In simple words, Abstract datatype is the mathematical model of data structures that specifies the
+                    type of data stores, and the operations supported on them.
+
+                    There are some examples of ADTs like - Arrays, Lists, queues, Sets, Stacks, Tables, Trees, Vectors,
+                    etc.
+
+                    You might have seen them in your programming career. Arrays and List are very common terms in
+                    programming.
+
+                    Now you know what is meant by abstract datatypes. But with abstract datatypes, you can see one more
+                    term i.e Arrays. What is an array?
+
+                    An array is a type of data structure that stores the data in contiguous memory locations, and every
+                    element of an array can be accessed using its index number, index number of an array starts with 0
+                    to n.
+
+
+
+
+                    As you can see in the above image. Elements of an array stored in contiguous memory locations, you
+                    can also see indexes and a total number of elements in the image.
+                    After knowing what is array it is important to know the limitations of an array. An array is of
+                    fixed size, which means the size of an array never changes once it is created, even if we desire to
+                    change it.
+                    To understand this, assume we have an array of storing capacity of 5 elements, we already filled our
+                    array with 5 elements, now we are trying to push the 6th element inside an array, but since the size
+                    of an array is fixed, the 6th element never goes into an array.
+
+
+
+
+                    If still want to add extra items to your array then you need to create one bigger array and then
+                    copy all the elements of an existing array to it.
+
+
+
+                    If you're familiar with any kind of programming language, then you know there are some operations we
+                    can do with arrays.
+                    like-
+                    get(element) -> get element from array using its index.
+                    set(index, value) -> set value at specific index.
+                    In some other programming languages, there are more operations like -
+                    max()
+                    min()
+                    Search(element)
+                    Append(element)
+                    Resize()
+                    etc...
+                    do not confuse it with resize(), Resize means copying all elements of an existing array to a bigger
+                    array.
+
+                    There are two types of an array -
+                    1) Static array - size cannot be changed.
+                    2) Dynamic array - size can be changed.
+
+                    Now you're thinking how dynamic size can be altered if the size of an array is fixed. This is
+                    because a Dynamic array allocates memory during runtime using Heap memory. which means a Dynamic
+                    array creates a bigger and copies all the elements of an existing array to that bigger array during
+                    runtime. yes, I know this is awesome. But this also has its drawbacks we will discuss further.
+
+                    So that is it for today guys, now it's time to say goodbye, if you appreciate my work then please
+                    let your friends know about this course. If you are new to this course kindly check out previous
+                    tutorials, which will give you lots of new things about DSA.
+                    In the next chapter, we will discuss the implementation of an array, and how to allocate the array
+                    in heap memory, in the next chapter finally we play with code, we will code in c programming as I
+                    said earlier, you can code in your desire language.
+                    See ya in the next tut, take care and good bye.
+                </p>
+                <hr class="border border-light">
+            </div>
+            <div class="blog-recommendation-container">
+                <h3>You Might Also Like: </h3>
+                <div class="blog-recommendation">
+                    <a href="#" class="br-card">
+                        <div style="width: 300px; height: 200px; margin-bottom: 1rem;">
+                            <img class="d-block my-4" style="object-fit: contain; width: 100% ; height: 100%;"
+                                src="./images/blog1.jpg" alt="">
+                        </div>
+                        <h4>Blog Heading</h4>
+                        <div class="publish-date">
+                            20 Nov 2023
+                        </div>
+                    </a>
+                    <a href="#" class="br-card">
+                        <div style="width: 300px; height: 200px; margin-bottom: 1rem;">
+                            <img class="d-block my-4" style="object-fit: contain; width: 100% ; height: 100%;"
+                                src="./images/blog1.jpg" alt="">
+                        </div>
+                        <h4>Blog Heading</h4>
+                        <div class="publish-date">
+                            20 Nov 2023
+                        </div>
+                    </a>
+                    <a href="#" class="br-card">
+                        <div style="width: 300px; height: 200px; margin-bottom: 1rem;">
+                            <img class="d-block my-4" style="object-fit: contain; width: 100% ; height: 100%;"
+                                src="./images/blog1.jpg" alt="">
+                        </div>
+                        <h4>Blog Heading</h4>
+                        <div class="publish-date">
+                            20 Nov 2023
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="openNav">
+            <div onclick="openNav()">
+                <img src="./images/hamburger.png" alt="">
+            </div>
+        </div>
+        <footer>
+            Designed And Develop By: Ayush Ramteke
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

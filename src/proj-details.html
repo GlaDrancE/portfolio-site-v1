@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <title>GladCode - Projects</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .project-images .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .project-images .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #2e2f31;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-images .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .section-heading::after{
+            content: "";
+        }
+    </style>
+    <div id="side-navbar">
+        <img src="./images/cross.png" width="32px" alt="close" id="close-nav" onclick="closeNavbar()">
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="#">
+                <li>Education</li>
+            </a>
+            <a href="#">
+                <li>Blog</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </div>
+    <aside class="profile-block">
+        <div class="profile-section">
+            <div class="profile-img">
+                <img src="./images/profile.jpg" width="120px" alt="">
+            </div>
+            <div class="profile-name">Ayush Ramteke</div>
+            <div class="profile-bio">Full stack web developer and Programmer</div>
+        </div>
+        <div class="profile-details">
+            <div class="profile-address">
+                <div class="profile-add-opt">
+                    <p>Country:</p>
+                    <p>India</p>
+                </div>
+                <div class="profile-add-opt">
+                    <p>City:</p>
+                    <p>Nagpur</p>
+                </div>
+                <div class="profile-add-opt">
+                    <p>Age:</p>
+                    <p>18 Yrs</p>
+                </div>
+            </div>
+            <hr>
+            <div class="profile-languages">
+                <div class="lang">
+                    <div class="pie animate" style="--p:80;--c:#FFC700"> 80%</div>
+                    <p class="lang-name">Hindi</p>
+                </div>
+                <div class="lang">
+                    <div class="pie animate" style="--p:60;--c:#FFC700"> 60%</div>
+                    <p class="lang-name">English</p>
+                </div>
+                <div class="lang">
+                    <div class="pie animate" style="--p:70;--c:#FFC700"> 70%</div>
+                    <p class="lang-name">Marathi</p>
+                </div>
+            </div>
+            <hr>
+            <div class="profile-skills">
+                <h2>Skills:</h2>
+                <div class="skills-bars">
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="skill-bar bar1"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>CSS</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="skill-bar bar2"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>Javascript</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="skill-bar bar3"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>NodeJS</p>
+                            <p>55%</p>
+                        </div>
+                        <div class="skill-bar bar4"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>C</p>
+                            <p>75%</p>
+                        </div>
+                        <div class="skill-bar bar5"></div>
+                    </div>
+                    <div class="my-skills">
+                        <div class="name-percentage">
+                            <p>C++</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="skill-bar bar6"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="d-block text-center text-secondary tr">
+                <img src="/" alt="">
+                <p>Download CV</p>
+            </a>
+        </div>
+        <div class="profile-social-media">
+            <ul>
+                <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </ul>
+        </div>
+    </aside>
+    <div class="body-container">
+        <div class="project-images">
+            <h3 class="project-headings">Project Tiles</h3>
+            <!-- Swiper -->
+            <div class="swiper projectSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/projects-images/ecom1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/projects-images/ecom2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/projects-images/ecom3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/projects-images/ecom4.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="project-desc-section">
+
+            <h3 class="project-headings">Project Details</h3>
+            <div class="project-description">
+                <div class="project-details">
+                    <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptatibus pariatur! Ipsum
+                        laborum tempora temporibus aperiam natus atque, libero sed porro itaque eos nisi, debitis
+                        maiores vero dolor eius tempore voluptas officia. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Adipisci tenetur perferendis ipsa! Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Odit placeat ipsum, cumque expedita explicabo facere. Eaque doloribus vero
+                        voluptatum voluptate quia ipsum amet doloremque iure, eligendi commodi consequuntur id error
+                        placeat quibusdam, officia exercitationem? Voluptas maxime possimus tempore quasi enim.</div>
+                </div>
+                <div class="order-details">
+                    <div class="inner-order-details">
+
+                        <div class="name-percentage">
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="name-percentage">
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="name-percentage">
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="name-percentage">
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="name-percentage">
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="name-percentage">
+                            <p>HTML</p>
+                            <p>80%</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="testimonials-section section-heading">
+        <h2>Client Reviews</h2>
+        <div class="testimonials-block">
+            <div class="swiper testimonialsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="comment-content">
+                            <div class="name-ratings">
+                                <div class="customer-name">diegort99</div>
+                                <div class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="comment">
+                                Friendly and attentive seller and cheap and quality service, I sent him some photos of
+                                how I
+                                wanted
+                                my website to look and he gave me some templates that were exactly what I asked for. He
+                                placed
+                                the
+                                order on time and in great detail.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-content">
+                            <div class="name-ratings">
+                                <div class="customer-name">diegort99</div>
+                                <div class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="comment">
+                                Friendly and attentive seller and cheap and quality service, I sent him some photos of
+                                how I
+                                wanted
+                                my website to look and he gave me some templates that were exactly what I asked for. He
+                                placed
+                                the
+                                order on time and in great detail.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-content">
+                            <div class="name-ratings">
+                                <div class="customer-name">diegort99</div>
+                                <div class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="comment">
+                                Friendly and attentive seller and cheap and quality service, I sent him some photos of
+                                how I
+                                wanted
+                                my website to look and he gave me some templates that were exactly what I asked for. He
+                                placed
+                                the
+                                order on time and in great detail.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-content">
+                            <div class="name-ratings">
+                                <div class="customer-name">diegort99</div>
+                                <div class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="comment">
+                                Friendly and attentive seller and cheap and quality service, I sent him some photos of
+                                how I
+                                wanted
+                                my website to look and he gave me some templates that were exactly what I asked for. He
+                                placed
+                                the
+                                order on time and in great detail.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- <div class="comment-change-button">
+            <button class="comment-active"></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div> -->
+    </div>
+    
+    <div id="openNav">
+        <div onclick="openNav()">
+            <img src="./images/hamburger.png" alt="">
+        </div>
+    </div>
+    <footer>
+        Designed And Develop By: Ayush Ramteke
+    </footer>
+</div>
+
+    <script src="script.js"></script>
+    <script>
+        var swiper = new Swiper(".projectSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+            autoplay:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        if(screen.width < 800){
+            var swiper = new Swiper(".projectSwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: false,
+            autoplay:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+        if(screen.width < 600){
+            var swiper = new Swiper(".projectSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            centeredSlides: false,
+            autoplay:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        }
+        var swiper = new Swiper(".testimonialsSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay:true,
+      pagination: {
+        // el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+</body>
+
+</html>
